@@ -1,11 +1,11 @@
 app/config.php
 
-node_modules/
+app/node_modules/
 
-public/uploads/*
-public/assets/css/*
-public/assets/js/*
-public/assets/img/*
+app/public/uploads/*
+app/public/assets/css/*
+app/public/assets/js/*
+app/public/assets/img/*
 
 ### macOS ###
 # General
