@@ -14,6 +14,9 @@ services:
       - mysql
   php:
     image: php-pdo
+    build:
+      context: .
+      dockerfile: Dockerfile
     user: "www-data:www-data"
     volumes:
       - ./app:/var/www/app
