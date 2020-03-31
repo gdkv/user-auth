@@ -1,8 +1,9 @@
 <?php
     return [
         'debug' => false,
-        'host' => '127.0.0.1',
-        'name' => 'db_test',
-        'user' => 'user',
-        'password' => 'password',
+        'host' => 'mysql-container',
+        'port' => '3306',
+        'name' => 'users_auth',
+        'user' => 'authuser',
+        'password' => 'passAuth123',
     ];
