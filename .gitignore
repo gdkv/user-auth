@@ -1,11 +1,10 @@
-data/db/*
+/data/db/*
 
-app/config.php
-app/node_modules/
+/app/config.php
+/app/node_modules/
 
-app/public/uploads/*
-
-!app/public/uploads
+/app/public/uploads/*
+!/app/public/uploads/.*
 
 ### macOS ###
 # General
