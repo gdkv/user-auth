@@ -21,14 +21,16 @@
         {
             if (is_null($this->db)) {
                 $host = getenv('host');
+                $port = getenv('port');
                 $name = getenv('name');
                 $user = getenv('user');
                 $password = getenv('password');
 
                 try {
-                    $this->db = new PDO("mysql:host={$host};dbname={$name}", $user, $password);
+                    $this->db = new PDO("mysql:host={$host};port={$port};dbname={$name}", $user, $password);
                 } catch (PDOException $e) {
-                    echo 'Неудалось подключиться к базе данных';
+                    echo "Неудалось подключиться к базе данных\r\n";
+                    echo "{$e}\r\n";
                     die();
                 }
             }
